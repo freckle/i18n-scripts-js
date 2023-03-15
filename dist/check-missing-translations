@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+set -eu
+
+translation_keys_in_code() {
+  local project=$1
+
+  git ls-files "$project" |
+    grep '\.js$' |
+    grep -v '\.min\.js$' |
+    ./translation-keys
+}
+
+translation_keys_in_locize() {
+  local namespace=$1
+
+  curl --silent --fail --show-error \
+    "https://translations.freckle.com/latest/en/$namespace" |
+    jq --raw-output 'keys[]'
+}
+
+empty_translation_keys_in_locize() {
+  local namespace=$1
+
+  curl --silent --fail --show-error \
+    "https://translations.freckle.com/latest/en/$namespace" |
+    jq --raw-output '[to_entries | .[] | select(.key | test("^[A-Z_]+$")) | select(.key == .value)] | .[] | .key' |
+    grep -xv 'OK' | grep -xv 'ELA' # Whitelist some common translation keys
+}
+
+translation_keys_only_in_code() {
+  local project=$1 namespace=$2
+
+  comm -23 \
+    <(translation_keys_in_code "$project" | sort -u) \
+    <(translation_keys_in_locize "$namespace" | sort -u)
+}
+
+empty_translation_keys_used_in_locize() {
+  local project=$1 namespace=$2
+
+  comm -12 \
+    <(translation_keys_in_code "$project" | sort -u) \
+    <(empty_translation_keys_in_locize "$namespace" | sort -u)
+}
+
+if (($# < 1)); then
+  echo "Usage: check-missing-translations <DIRECTORY> [NAMESPACE]" >&2
+  exit 64
+fi
+
+project=$1
+namespace=${2:-$project}
+
+tmp=$(mktemp)
+trap 'rm -f -- "$tmp"' EXIT
+
+# Check which keys are present in the frontend but not Locize
+translation_keys_only_in_code "$project" "$namespace" | sed 's/$/ not present/' | tee "$tmp"
+
+# Check which keys are present in both the frontend and Locize but are untranslated
+empty_translation_keys_used_in_locize "$project" "$namespace" | sed 's/$/ not translated/' | tee -a "$tmp"
+
+if [ -s "$tmp" ]; then
+  echo
+  echo "The above keys either need to be added to Locize or translated" >&2
+  exit 1
+fi
