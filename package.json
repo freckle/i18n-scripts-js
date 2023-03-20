@@ -4,6 +4,11 @@
   "description": "Scripts for i18n",
   "author": "Freckle",
   "license": "MIT",
+  "bin": {
+    "check-i18n-variables": "./dist/check-i18n-variables.js",
+    "check-i18next-icu-parser": "./dist/check-i18next-icu-parser.js",
+    "check-missing-translations": "./dist/check-missing-translations.js"
+  },
   "main": "./dist/index.js",
   "repository": {
     "type": "git",

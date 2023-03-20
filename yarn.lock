@@ -74,7 +74,9 @@ __metadata:
     i18next-icu: ^2.1.0
     intl-messageformat: ^10.3.1
   bin:
-    check-missing-translations: ./dist/check-missing-translations
+    check-i18n-variables: ./dist/check-i18n-variables.js
+    check-i18next-icu-parser: ./dist/check-i18next-icu-parser.js
+    check-missing-translations: ./dist/check-missing-translations.js
   languageName: unknown
   linkType: soft
 
