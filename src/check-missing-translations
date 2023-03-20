@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 set -eu
 
+script_dir="$(cd "$(dirname "$0")" && pwd)"
+
 translation_keys_in_code() {
   local project=$1
 
   git ls-files "$project" |
-    grep '\.js$' |
+    grep -E '\.(js|ts|tsx)$' |
     grep -v '\.min\.js$' |
-    ./translation-keys
+    "$script_dir/translation-keys"
 }
 
 translation_keys_in_locize() {
