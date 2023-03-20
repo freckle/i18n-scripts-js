@@ -4,9 +4,9 @@ set -eu
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 
 translation_keys_in_code() {
-  local project=$1
+  local project_path=$1
 
-  git ls-files "$project" |
+  git ls-files "$project_path" |
     grep -E '\.(js|ts|tsx)$' |
     grep -v '\.min\.js$' |
     "$script_dir/translation-keys"
@@ -30,37 +30,37 @@ empty_translation_keys_in_locize() {
 }
 
 translation_keys_only_in_code() {
-  local project=$1 namespace=$2
+  local project_path=$1 namespace=$2
 
   comm -23 \
-    <(translation_keys_in_code "$project" | sort -u) \
+    <(translation_keys_in_code "$project_path" | sort -u) \
     <(translation_keys_in_locize "$namespace" | sort -u)
 }
 
 empty_translation_keys_used_in_locize() {
-  local project=$1 namespace=$2
+  local project_path=$1 namespace=$2
 
   comm -12 \
-    <(translation_keys_in_code "$project" | sort -u) \
+    <(translation_keys_in_code "$project_path" | sort -u) \
     <(empty_translation_keys_in_locize "$namespace" | sort -u)
 }
 
 if (($# < 1)); then
-  echo "Usage: check-missing-translations <DIRECTORY> [NAMESPACE]" >&2
+  echo "Usage: check-missing-translations namespace [project/path]" >&2
   exit 64
 fi
 
-project=$1
-namespace=${2:-$project}
+namespace=${1}
+project_path=${2-.}
 
 tmp=$(mktemp)
 trap 'rm -f -- "$tmp"' EXIT
 
 # Check which keys are present in the frontend but not Locize
-translation_keys_only_in_code "$project" "$namespace" | sed 's/$/ not present/' | tee "$tmp"
+translation_keys_only_in_code "$project_path" "$namespace" | sed 's/$/ not present/' | tee "$tmp"
 
 # Check which keys are present in both the frontend and Locize but are untranslated
-empty_translation_keys_used_in_locize "$project" "$namespace" | sed 's/$/ not translated/' | tee -a "$tmp"
+empty_translation_keys_used_in_locize "$project_path" "$namespace" | sed 's/$/ not translated/' | tee -a "$tmp"
 
 if [ -s "$tmp" ]; then
   echo
