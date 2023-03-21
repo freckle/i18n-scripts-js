@@ -18,8 +18,6 @@ const {getFiles, filterJsFiles, supportedLngs} = require('./helpers.js')
 
 const projects = process.argv.slice(2)
 
-console.log(projects)
-
 const translationKeysWithKnownVariablesInProject = async project => {
   const files = await getFiles(project)
   const jsFiles = files.filter(filterJsFiles)
