@@ -29,19 +29,6 @@ const filterJsFiles = f =>
 
 module.exports.filterJsFiles = filterJsFiles
 
-const projects = [
-  'core',
-  'student-materials',
-  'educator-materials',
-  'entities',
-  'school',
-  'student',
-  'console',
-  'classroom'
-]
-
-module.exports.projects = projects
-
 const supportedLngs = ['es', 'en', 'en-GB']
 
 module.exports.supportedLngs = supportedLngs

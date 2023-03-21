@@ -16,7 +16,15 @@ const {
 } = require('./translation-extraction.js')
 const {getFiles, filterJsFiles, supportedLngs} = require('./helpers.js')
 
-const projects = process.argv.slice(2)
+const [_nodeBin, _scriptPath, ...projects] = process.argv
+
+if (projects.length < 1) {
+  console.log('Usage: check-i18n-variables <path>')
+  return
+}
+
+// TODO: Pass in via ENV?
+const ns = ['school', 'student', 'console', 'classroom', 'common']
 
 const translationKeysWithKnownVariablesInProject = async project => {
   const files = await getFiles(project)
