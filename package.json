@@ -18,8 +18,8 @@
     "build": "rm -r dist && cp -r src dist"
   },
   "dependencies": {
+    "@babel/parser": "^7.29.2",
     "esprima-walk": "0.1.0",
-    "flow-parser": "0.309.0",
     "i18next": "19.9.2",
     "i18next-http-backend": "^3.0.0",
     "i18next-icu": "^2.4.3",

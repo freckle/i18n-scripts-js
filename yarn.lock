@@ -5,10 +5,45 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@babel/helper-string-parser@npm:^7.27.1":
+  version: 7.27.1
+  resolution: "@babel/helper-string-parser@npm:7.27.1"
+  checksum: 0a8464adc4b39b138aedcb443b09f4005d86207d7126e5e079177e05c3116107d856ec08282b365e9a79a9872f40f4092a6127f8d74c8a01c1ef789dacfc25d6
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-identifier@npm:^7.28.5":
+  version: 7.28.5
+  resolution: "@babel/helper-validator-identifier@npm:7.28.5"
+  checksum: 5a251a6848e9712aea0338f659a1a3bd334d26219d5511164544ca8ec20774f098c3a6661e9da65a0d085c745c00bb62c8fada38a62f08fa1f8053bc0aeb57e4
+  languageName: node
+  linkType: hard
+
+"@babel/parser@npm:^7.29.2":
+  version: 7.29.2
+  resolution: "@babel/parser@npm:7.29.2"
+  dependencies:
+    "@babel/types": ^7.29.0
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 25249623ffceb61beda0ba67776cf3957ffd49bef3005ccb81da3049db52115c91ad97c97da661b714f92d062e052d07bd2ba6cba6b5460f168ff38dabaf4d6d
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.12.0":
   version: 7.29.2
   resolution: "@babel/runtime@npm:7.29.2"
   checksum: d5548d1165de8995f8afc93a5694b8625409be16cd1f2250ac13e331335858ddac3cb9fd278e6c43956a130101a2203f09417938a1a96f9fb70f02b4b4172e1d
+  languageName: node
+  linkType: hard
+
+"@babel/types@npm:^7.29.0":
+  version: 7.29.0
+  resolution: "@babel/types@npm:7.29.0"
+  dependencies:
+    "@babel/helper-string-parser": ^7.27.1
+    "@babel/helper-validator-identifier": ^7.28.5
+  checksum: 83f190438e94c22b2574aaeef7501830311ef266eaabfb06523409f64e2fe855e522951607085d71cad286719adef14e1ba37b671f334a7cd25b0f8506a01e0b
   languageName: node
   linkType: hard
 
@@ -67,8 +102,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@freckle/i18n-scripts@workspace:."
   dependencies:
+    "@babel/parser": ^7.29.2
     esprima-walk: 0.1.0
-    flow-parser: 0.309.0
     i18next: 19.9.2
     i18next-http-backend: ^3.0.0
     i18next-icu: ^2.4.3
@@ -100,13 +135,6 @@ __metadata:
   version: 0.1.0
   resolution: "esprima-walk@npm:0.1.0"
   checksum: 976fe98d3bfb3fd78906ab774388ad41ef2adeb2cddea4ddb5803cdccc438bc7e83cce294b6e513b9144c3bc2a902f4b22904a51d3c84c583c38b9fd1c2823dc
-  languageName: node
-  linkType: hard
-
-"flow-parser@npm:0.309.0":
-  version: 0.309.0
-  resolution: "flow-parser@npm:0.309.0"
-  checksum: 99f6565fa74958fdf9fd9f08cf12b506fccfeeea6a58e4e881c79e0434eb697ae980bf2128a43f52630a34205f38ff1b85aa77ddc064516d714a2b61d938a475
   languageName: node
   linkType: hard
 

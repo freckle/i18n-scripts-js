@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// @flow
 //
 // Checks all keys in Locize to make sure that they can be parsed by the `i18next` `t` function
 //

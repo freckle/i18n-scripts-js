@@ -1,5 +1,5 @@
 const fs = require('fs')
-const parser = require('flow-parser')
+const parser = require('@babel/parser')
 const walk = require('esprima-walk')
 
 const isIdentifierT = node => node && node.type === 'Identifier' && node.name === 't'
@@ -16,13 +16,13 @@ const naiveLooksLikeApplication = (content, node, previousNode) =>
   content.slice(previousNode.range[1], node.range[0]).trim() === '('
 
 const looksLikeTApplication = (content, node, previousNode) =>
-  node.type === 'Literal' &&
+  node.type === 'StringLiteral' &&
   isIdentifierT(previousNode) &&
   naiveLooksLikeApplication(content, node, previousNode)
 
 const isObjectWithSimpleProperties = node =>
   node.type === 'ObjectExpression' &&
-  node.properties.every(p => p.type === 'Property' && p.key.type === 'Identifier')
+  node.properties.every(p => p.type === 'ObjectProperty' && p.key.type === 'Identifier')
 
 const KNOWN_VARIABLES_TAG = 'i18n-key-with-known-variables'
 const UNKNOWN_VARIABLES_TAG = 'i18n-key-with-unknown-variables'
@@ -69,7 +69,11 @@ module.exports.UNKNOWN_VARIABLES_TAG = UNKNOWN_VARIABLES_TAG
 // Yields keys with variables as encountered without sorting or de-duplication.
 module.exports.extractTranslationKeysAndVariables = path => {
   const content = fs.readFileSync(path, {encoding: 'utf8'})
-  const ast = parser.parse(content)
+  const ast = parser.parse(content, {
+    sourceType: 'unambiguous',
+    plugins: ['jsx', 'typescript'],
+    ranges: true
+  })
 
   const results = []
   let previousNode = null
