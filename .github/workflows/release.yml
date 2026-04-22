@@ -1,0 +1,43 @@
+# .github/workflows/release.yml
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+      - rc/*
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - id: token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.FRECKLE_AUTOMATION_APP_ID }}
+          private-key: ${{ secrets.FRECKLE_AUTOMATION_PRIVATE_KEY }}
+
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v6
+        with:
+          cache: yarn
+          registry-url: https://registry.npmjs.org
+
+      - run: yarn install
+
+      - run: yarn build
+
+      - id: release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          extra_plugins: |
+            conventional-changelog-conventionalcommits
+        env:
+          FORCE_COLOR: 1
+          GITHUB_TOKEN: ${{ steps.token.outputs.token }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
