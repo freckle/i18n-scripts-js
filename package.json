@@ -25,5 +25,5 @@
     "i18next-icu": "^2.1.0",
     "intl-messageformat": "^10.3.5"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.8.7"
 }
