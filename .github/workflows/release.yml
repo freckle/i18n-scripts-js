@@ -35,13 +35,13 @@ jobs:
 
       - run: yarn install
 
-      - run: yarn build
-
       - id: release
         uses: cycjimmy/semantic-release-action@v4
         with:
           extra_plugins: |
             conventional-changelog-conventionalcommits
+            @semantic-release/exec
+            @semantic-release/git
         env:
           FORCE_COLOR: 1
           GITHUB_TOKEN: ${{ steps.token.outputs.token }}
