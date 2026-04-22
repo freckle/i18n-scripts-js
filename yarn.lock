@@ -71,7 +71,7 @@ __metadata:
     flow-parser: 0.309.0
     i18next: 19.9.2
     i18next-http-backend: ^3.0.0
-    i18next-icu: ^2.1.0
+    i18next-icu: ^2.4.3
     intl-messageformat: ^10.3.5
   bin:
     check-i18n-variables: ./dist/check-i18n-variables.js
@@ -119,12 +119,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next-icu@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "i18next-icu@npm:2.1.0"
+"i18next-icu@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "i18next-icu@npm:2.4.3"
   peerDependencies:
-    intl-messageformat: ^10.2.4
-  checksum: 15be2eef321d34d66770d388e28912b284ac196e5e0ed940fb55e920a6575247e0c9dff1735fbb32018acd7bd980e673b1ec707175e8c06474f2dbb32041333d
+    intl-messageformat: ">=10.3.3 <12.0.0"
+  checksum: 10a3ef390aa24a8cc47840da55ecd46551f29f0c10b116a2c74f1d93c439fb141d5dcd3078a17d0db2e389f4a21d024eae628b0e90b38962a4618771539313e4
   languageName: node
   linkType: hard
 
