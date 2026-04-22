@@ -5,12 +5,10 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@babel/runtime@npm:^7.3.1":
-  version: 7.21.0
-  resolution: "@babel/runtime@npm:7.21.0"
-  dependencies:
-    regenerator-runtime: ^0.13.11
-  checksum: 7b33e25bfa9e0e1b9e8828bb61b2d32bdd46b41b07ba7cb43319ad08efc6fda8eb89445193e67d6541814627df0ca59122c0ea795e412b99c5183a0540d338ab
+"@babel/runtime@npm:^7.12.0":
+  version: 7.29.2
+  resolution: "@babel/runtime@npm:7.29.2"
+  checksum: d5548d1165de8995f8afc93a5694b8625409be16cd1f2250ac13e331335858ddac3cb9fd278e6c43956a130101a2203f09417938a1a96f9fb70f02b4b4172e1d
   languageName: node
   linkType: hard
 
@@ -71,7 +69,7 @@ __metadata:
   dependencies:
     esprima-walk: 0.1.0
     flow-parser: 0.309.0
-    i18next: 19.1.0
+    i18next: 19.9.2
     i18next-http-backend: ^3.0.0
     i18next-icu: ^2.1.0
     intl-messageformat: ^10.3.5
@@ -130,12 +128,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:19.1.0":
-  version: 19.1.0
-  resolution: "i18next@npm:19.1.0"
+"i18next@npm:19.9.2":
+  version: 19.9.2
+  resolution: "i18next@npm:19.9.2"
   dependencies:
-    "@babel/runtime": ^7.3.1
-  checksum: b522e156a464055e3c94f7d93cf829f0d53e27aa0783c12adcdf157a42725bb7aaf345800252b26cf90ed6e3edfe52a729cdc63f1032f5ae9388a7ec243bbdb8
+    "@babel/runtime": ^7.12.0
+  checksum: a24207707eacb28488975f8921d843bc35b86f2a48504cb82eaf620e1aacddbda8d53a4dc600543a708ba49bc45e61072a753f250e89fad2c1932259190ef81a
   languageName: node
   linkType: hard
 
@@ -162,13 +160,6 @@ __metadata:
     encoding:
       optional: true
   checksum: d76d2f5edb451a3f05b15115ec89fc6be39de37c6089f1b6368df03b91e1633fd379a7e01b7ab05089a25034b2023d959b47e59759cb38d88341b2459e89d6e5
-  languageName: node
-  linkType: hard
-
-"regenerator-runtime@npm:^0.13.11":
-  version: 0.13.11
-  resolution: "regenerator-runtime@npm:0.13.11"
-  checksum: 27481628d22a1c4e3ff551096a683b424242a216fee44685467307f14d58020af1e19660bf2e26064de946bad7eff28950eae9f8209d55723e2d9351e632bbb4
   languageName: node
   linkType: hard
 
