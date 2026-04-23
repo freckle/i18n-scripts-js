@@ -70,7 +70,7 @@ __metadata:
     esprima-walk: 0.1.0
     flow-parser: 0.309.0
     i18next: 19.9.2
-    i18next-http-backend: ^3.0.0
+    i18next-http-backend: ^3.0.4
     i18next-icu: ^2.4.3
     intl-messageformat: ^10.3.5
   bin:
@@ -110,7 +110,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next-http-backend@npm:^3.0.0":
+"i18next-http-backend@npm:^3.0.4":
   version: 3.0.5
   resolution: "i18next-http-backend@npm:3.0.5"
   dependencies:
