@@ -19,11 +19,11 @@
   },
   "dependencies": {
     "esprima-walk": "0.1.0",
-    "flow-parser": "0.140.0",
-    "i18next": "19.1.0",
-    "i18next-http-backend": "^2.1.1",
-    "i18next-icu": "^2.1.0",
-    "intl-messageformat": "^10.3.1"
+    "flow-parser": "0.309.0",
+    "i18next": "19.9.2",
+    "i18next-http-backend": "^3.0.4",
+    "i18next-icu": "^2.4.3",
+    "intl-messageformat": "^10.7.18"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.8.7"
 }
