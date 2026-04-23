@@ -12,9 +12,9 @@ yarn add @freckle/i18n-scripts
 
 TODO
 
-## Versioning and release process
+## Release
 
-See [RELEASE.md](./RELEASE.md).
+See [RELEASE.md](./RELEASE.md) for more details.
 
 ---
 
