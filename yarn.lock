@@ -72,7 +72,7 @@ __metadata:
     i18next: 19.9.2
     i18next-http-backend: ^3.0.4
     i18next-icu: ^2.4.3
-    intl-messageformat: ^10.3.5
+    intl-messageformat: ^10.7.18
   bin:
     check-i18n-variables: ./dist/check-i18n-variables.js
     check-i18next-icu-parser: ./dist/check-i18next-icu-parser.js
@@ -137,7 +137,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-messageformat@npm:^10.3.5":
+"intl-messageformat@npm:^10.7.18":
   version: 10.7.18
   resolution: "intl-messageformat@npm:10.7.18"
   dependencies:
