@@ -2,20 +2,20 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 6
-  cacheKey: 8
+  version: 9
+  cacheKey: 10
 
 "@babel/runtime@npm:^7.29.2":
   version: 7.29.2
   resolution: "@babel/runtime@npm:7.29.2"
-  checksum: d5548d1165de8995f8afc93a5694b8625409be16cd1f2250ac13e331335858ddac3cb9fd278e6c43956a130101a2203f09417938a1a96f9fb70f02b4b4172e1d
+  checksum: 8/d5548d1165de8995f8afc93a5694b8625409be16cd1f2250ac13e331335858ddac3cb9fd278e6c43956a130101a2203f09417938a1a96f9fb70f02b4b4172e1d
   languageName: node
   linkType: hard
 
 "@formatjs/fast-memoize@npm:3.1.2":
   version: 3.1.2
   resolution: "@formatjs/fast-memoize@npm:3.1.2"
-  checksum: b5159ebcd11b858eeca645e4dd07dd84ebfc0bc222d5cbe7854b1ff868fd05e01872d699bee6e576797f7ff955eee24f7ad4537880e23e20a7dd978ea15a9f30
+  checksum: 8/b5159ebcd11b858eeca645e4dd07dd84ebfc0bc222d5cbe7854b1ff868fd05e01872d699bee6e576797f7ff955eee24f7ad4537880e23e20a7dd978ea15a9f30
   languageName: node
   linkType: hard
 
@@ -23,15 +23,15 @@ __metadata:
   version: 3.5.4
   resolution: "@formatjs/icu-messageformat-parser@npm:3.5.4"
   dependencies:
-    "@formatjs/icu-skeleton-parser": 2.1.4
-  checksum: 260cdc56a586de034cfa9ccc18d5aefd4d7e9fdf368899a7e769ea38dceaadce8db89393763caa5a376654007ec0241106a7dc3ac8c285cf05105b203a083395
+    "@formatjs/icu-skeleton-parser": "npm:2.1.4"
+  checksum: 8/260cdc56a586de034cfa9ccc18d5aefd4d7e9fdf368899a7e769ea38dceaadce8db89393763caa5a376654007ec0241106a7dc3ac8c285cf05105b203a083395
   languageName: node
   linkType: hard
 
 "@formatjs/icu-skeleton-parser@npm:2.1.4":
   version: 2.1.4
   resolution: "@formatjs/icu-skeleton-parser@npm:2.1.4"
-  checksum: 4cf7c92c5d5876243489ba7ac40b441928c054cbdc874e7b9b083fc76f19eac01d105e0438278af73482d6343149572c9961a36cabdf9baca788f7f28d3c3acb
+  checksum: 8/4cf7c92c5d5876243489ba7ac40b441928c054cbdc874e7b9b083fc76f19eac01d105e0438278af73482d6343149572c9961a36cabdf9baca788f7f28d3c3acb
   languageName: node
   linkType: hard
 
@@ -39,12 +39,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@freckle/i18n-scripts@workspace:."
   dependencies:
-    esprima-walk: 0.1.0
-    flow-parser: 0.309.0
-    i18next: 26.0.6
-    i18next-http-backend: ^3.0.5
-    i18next-icu: ^2.4.3
-    intl-messageformat: ^11.2.1
+    esprima-walk: "npm:0.1.0"
+    flow-parser: "npm:0.309.0"
+    i18next: "npm:26.0.6"
+    i18next-http-backend: "npm:^3.0.5"
+    i18next-icu: "npm:^2.4.3"
+    intl-messageformat: "npm:^11.2.1"
   bin:
     check-i18n-variables: ./dist/check-i18n-variables.js
     check-i18next-icu-parser: ./dist/check-i18next-icu-parser.js
@@ -56,22 +56,22 @@ __metadata:
   version: 4.1.0
   resolution: "cross-fetch@npm:4.1.0"
   dependencies:
-    node-fetch: ^2.7.0
-  checksum: c02fa85d59f83e50dbd769ee472c9cc984060c403ee5ec8654659f61a525c1a655eef1c7a35e365c1a107b4e72d76e786718b673d1cb3c97f61d4644cb0a9f9d
+    node-fetch: "npm:^2.7.0"
+  checksum: 8/c02fa85d59f83e50dbd769ee472c9cc984060c403ee5ec8654659f61a525c1a655eef1c7a35e365c1a107b4e72d76e786718b673d1cb3c97f61d4644cb0a9f9d
   languageName: node
   linkType: hard
 
 "esprima-walk@npm:0.1.0":
   version: 0.1.0
   resolution: "esprima-walk@npm:0.1.0"
-  checksum: 976fe98d3bfb3fd78906ab774388ad41ef2adeb2cddea4ddb5803cdccc438bc7e83cce294b6e513b9144c3bc2a902f4b22904a51d3c84c583c38b9fd1c2823dc
+  checksum: 8/976fe98d3bfb3fd78906ab774388ad41ef2adeb2cddea4ddb5803cdccc438bc7e83cce294b6e513b9144c3bc2a902f4b22904a51d3c84c583c38b9fd1c2823dc
   languageName: node
   linkType: hard
 
 "flow-parser@npm:0.309.0":
   version: 0.309.0
   resolution: "flow-parser@npm:0.309.0"
-  checksum: 99f6565fa74958fdf9fd9f08cf12b506fccfeeea6a58e4e881c79e0434eb697ae980bf2128a43f52630a34205f38ff1b85aa77ddc064516d714a2b61d938a475
+  checksum: 8/99f6565fa74958fdf9fd9f08cf12b506fccfeeea6a58e4e881c79e0434eb697ae980bf2128a43f52630a34205f38ff1b85aa77ddc064516d714a2b61d938a475
   languageName: node
   linkType: hard
 
@@ -79,8 +79,8 @@ __metadata:
   version: 3.0.6
   resolution: "i18next-http-backend@npm:3.0.6"
   dependencies:
-    cross-fetch: 4.1.0
-  checksum: 1a3e9d1e0a0ca37d1ef2c46e6e342c28b2cf20b27f78617b85fc26239567f88b4502ed9a47cb4de36ef6e93cb5025aca0ebbca4cf72f4a29ced317e9d9be918f
+    cross-fetch: "npm:4.1.0"
+  checksum: 8/1a3e9d1e0a0ca37d1ef2c46e6e342c28b2cf20b27f78617b85fc26239567f88b4502ed9a47cb4de36ef6e93cb5025aca0ebbca4cf72f4a29ced317e9d9be918f
   languageName: node
   linkType: hard
 
@@ -89,7 +89,7 @@ __metadata:
   resolution: "i18next-icu@npm:2.4.3"
   peerDependencies:
     intl-messageformat: ">=10.3.3 <12.0.0"
-  checksum: 10a3ef390aa24a8cc47840da55ecd46551f29f0c10b116a2c74f1d93c439fb141d5dcd3078a17d0db2e389f4a21d024eae628b0e90b38962a4618771539313e4
+  checksum: 8/10a3ef390aa24a8cc47840da55ecd46551f29f0c10b116a2c74f1d93c439fb141d5dcd3078a17d0db2e389f4a21d024eae628b0e90b38962a4618771539313e4
   languageName: node
   linkType: hard
 
@@ -97,13 +97,13 @@ __metadata:
   version: 26.0.6
   resolution: "i18next@npm:26.0.6"
   dependencies:
-    "@babel/runtime": ^7.29.2
+    "@babel/runtime": "npm:^7.29.2"
   peerDependencies:
     typescript: ^5 || ^6
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 3f1854d4240105006a10cd7986d26ea646f8b8675c443cb219bd8deb6d64db4ad05327d2d61ba4025519f8781893fb699d318c6baa19674f5dd213916923e780
+  checksum: 8/3f1854d4240105006a10cd7986d26ea646f8b8675c443cb219bd8deb6d64db4ad05327d2d61ba4025519f8781893fb699d318c6baa19674f5dd213916923e780
   languageName: node
   linkType: hard
 
@@ -111,9 +111,9 @@ __metadata:
   version: 11.2.1
   resolution: "intl-messageformat@npm:11.2.1"
   dependencies:
-    "@formatjs/fast-memoize": 3.1.2
-    "@formatjs/icu-messageformat-parser": 3.5.4
-  checksum: 5138a057ac394ca99043ee1f8ee783733cf3cc4ea154c1dbca86318fe8f77eed19da76d7d9156558055cd49edc9932e89f0e20ea81341b71397c3bb2ff73daf7
+    "@formatjs/fast-memoize": "npm:3.1.2"
+    "@formatjs/icu-messageformat-parser": "npm:3.5.4"
+  checksum: 8/5138a057ac394ca99043ee1f8ee783733cf3cc4ea154c1dbca86318fe8f77eed19da76d7d9156558055cd49edc9932e89f0e20ea81341b71397c3bb2ff73daf7
   languageName: node
   linkType: hard
 
@@ -121,27 +121,27 @@ __metadata:
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
-    whatwg-url: ^5.0.0
+    whatwg-url: "npm:^5.0.0"
   peerDependencies:
     encoding: ^0.1.0
   peerDependenciesMeta:
     encoding:
       optional: true
-  checksum: d76d2f5edb451a3f05b15115ec89fc6be39de37c6089f1b6368df03b91e1633fd379a7e01b7ab05089a25034b2023d959b47e59759cb38d88341b2459e89d6e5
+  checksum: 8/d76d2f5edb451a3f05b15115ec89fc6be39de37c6089f1b6368df03b91e1633fd379a7e01b7ab05089a25034b2023d959b47e59759cb38d88341b2459e89d6e5
   languageName: node
   linkType: hard
 
 "tr46@npm:~0.0.3":
   version: 0.0.3
   resolution: "tr46@npm:0.0.3"
-  checksum: 726321c5eaf41b5002e17ffbd1fb7245999a073e8979085dacd47c4b4e8068ff5777142fc6726d6ca1fd2ff16921b48788b87225cbc57c72636f6efa8efbffe3
+  checksum: 8/726321c5eaf41b5002e17ffbd1fb7245999a073e8979085dacd47c4b4e8068ff5777142fc6726d6ca1fd2ff16921b48788b87225cbc57c72636f6efa8efbffe3
   languageName: node
   linkType: hard
 
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
   resolution: "webidl-conversions@npm:3.0.1"
-  checksum: c92a0a6ab95314bde9c32e1d0a6dfac83b578f8fa5f21e675bc2706ed6981bc26b7eb7e6a1fab158e5ce4adf9caa4a0aee49a52505d4d13c7be545f15021b17c
+  checksum: 8/c92a0a6ab95314bde9c32e1d0a6dfac83b578f8fa5f21e675bc2706ed6981bc26b7eb7e6a1fab158e5ce4adf9caa4a0aee49a52505d4d13c7be545f15021b17c
   languageName: node
   linkType: hard
 
@@ -149,8 +149,8 @@ __metadata:
   version: 5.0.0
   resolution: "whatwg-url@npm:5.0.0"
   dependencies:
-    tr46: ~0.0.3
-    webidl-conversions: ^3.0.0
-  checksum: b8daed4ad3356cc4899048a15b2c143a9aed0dfae1f611ebd55073310c7b910f522ad75d727346ad64203d7e6c79ef25eafd465f4d12775ca44b90fa82ed9e2c
+    tr46: "npm:~0.0.3"
+    webidl-conversions: "npm:^3.0.0"
+  checksum: 8/b8daed4ad3356cc4899048a15b2c143a9aed0dfae1f611ebd55073310c7b910f522ad75d727346ad64203d7e6c79ef25eafd465f4d12775ca44b90fa82ed9e2c
   languageName: node
   linkType: hard
