@@ -5,7 +5,7 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@babel/runtime@npm:^7.12.0":
+"@babel/runtime@npm:^7.29.2":
   version: 7.29.2
   resolution: "@babel/runtime@npm:7.29.2"
   checksum: d5548d1165de8995f8afc93a5694b8625409be16cd1f2250ac13e331335858ddac3cb9fd278e6c43956a130101a2203f09417938a1a96f9fb70f02b4b4172e1d
@@ -41,7 +41,7 @@ __metadata:
   dependencies:
     esprima-walk: 0.1.0
     flow-parser: 0.309.0
-    i18next: 19.9.2
+    i18next: 26.0.6
     i18next-http-backend: ^3.0.4
     i18next-icu: ^2.4.3
     intl-messageformat: ^11.2.1
@@ -93,12 +93,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:19.9.2":
-  version: 19.9.2
-  resolution: "i18next@npm:19.9.2"
+"i18next@npm:26.0.6":
+  version: 26.0.6
+  resolution: "i18next@npm:26.0.6"
   dependencies:
-    "@babel/runtime": ^7.12.0
-  checksum: a24207707eacb28488975f8921d843bc35b86f2a48504cb82eaf620e1aacddbda8d53a4dc600543a708ba49bc45e61072a753f250e89fad2c1932259190ef81a
+    "@babel/runtime": ^7.29.2
+  peerDependencies:
+    typescript: ^5 || ^6
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 3f1854d4240105006a10cd7986d26ea646f8b8675c443cb219bd8deb6d64db4ad05327d2d61ba4025519f8781893fb699d318c6baa19674f5dd213916923e780
   languageName: node
   linkType: hard
 
