@@ -42,7 +42,7 @@ __metadata:
     esprima-walk: 0.1.0
     flow-parser: 0.309.0
     i18next: 26.0.6
-    i18next-http-backend: ^3.0.4
+    i18next-http-backend: ^3.0.5
     i18next-icu: ^2.4.3
     intl-messageformat: ^11.2.1
   bin:
@@ -75,12 +75,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next-http-backend@npm:^3.0.4":
-  version: 3.0.5
-  resolution: "i18next-http-backend@npm:3.0.5"
+"i18next-http-backend@npm:^3.0.5":
+  version: 3.0.6
+  resolution: "i18next-http-backend@npm:3.0.6"
   dependencies:
     cross-fetch: 4.1.0
-  checksum: ea684ec842736cd609edce2d6701e375911711166e97537fdd44a290ea252868be92b684c9c1cf033d0f216162e0dd51d839ac6daffc182cd8bb17637ac86d07
+  checksum: 1a3e9d1e0a0ca37d1ef2c46e6e342c28b2cf20b27f78617b85fc26239567f88b4502ed9a47cb4de36ef6e93cb5025aca0ebbca4cf72f4a29ced317e9d9be918f
   languageName: node
   linkType: hard
 
