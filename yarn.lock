@@ -40,7 +40,7 @@ __metadata:
   resolution: "@freckle/i18n-scripts@workspace:."
   dependencies:
     esprima-walk: 0.1.0
-    flow-parser: 0.309.0
+    flow-parser: 0.310.0
     i18next: 26.0.6
     i18next-http-backend: ^3.0.5
     i18next-icu: ^2.4.3
@@ -68,10 +68,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-parser@npm:0.309.0":
-  version: 0.309.0
-  resolution: "flow-parser@npm:0.309.0"
-  checksum: 99f6565fa74958fdf9fd9f08cf12b506fccfeeea6a58e4e881c79e0434eb697ae980bf2128a43f52630a34205f38ff1b85aa77ddc064516d714a2b61d938a475
+"flow-parser@npm:0.310.0":
+  version: 0.310.0
+  resolution: "flow-parser@npm:0.310.0"
+  checksum: eab07015b19d4d3969ba5c6b1b3fb88c489c1ba4bdd7d111e40101bbc14b543adc9b42c4dcffb9eb69e51f4d7455ceebb1d3fe0f2617873a9f1a56c74e52b7a1
   languageName: node
   linkType: hard
 
