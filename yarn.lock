@@ -35,7 +35,7 @@ __metadata:
     esprima-walk: 0.1.0
     flow-parser: 0.312.1
     i18next: 26.0.8
-    i18next-http-backend: ^3.0.6
+    i18next-http-backend: ^4.0.0
     i18next-icu: ^2.4.3
     intl-messageformat: ^11.2.3
   bin:
@@ -44,15 +44,6 @@ __metadata:
     check-missing-translations: ./dist/check-missing-translations.js
   languageName: unknown
   linkType: soft
-
-"cross-fetch@npm:4.1.0":
-  version: 4.1.0
-  resolution: "cross-fetch@npm:4.1.0"
-  dependencies:
-    node-fetch: ^2.7.0
-  checksum: c02fa85d59f83e50dbd769ee472c9cc984060c403ee5ec8654659f61a525c1a655eef1c7a35e365c1a107b4e72d76e786718b673d1cb3c97f61d4644cb0a9f9d
-  languageName: node
-  linkType: hard
 
 "esprima-walk@npm:0.1.0":
   version: 0.1.0
@@ -68,12 +59,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next-http-backend@npm:^3.0.6":
-  version: 3.0.6
-  resolution: "i18next-http-backend@npm:3.0.6"
-  dependencies:
-    cross-fetch: 4.1.0
-  checksum: 1a3e9d1e0a0ca37d1ef2c46e6e342c28b2cf20b27f78617b85fc26239567f88b4502ed9a47cb4de36ef6e93cb5025aca0ebbca4cf72f4a29ced317e9d9be918f
+"i18next-http-backend@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "i18next-http-backend@npm:4.0.0"
+  checksum: 9986ffa9858eec27ac114978517873162e39a20ce93aac8d915a43d3caf26d61b800edc40f610090d63f96615ebf4ef499fdb5673d1c7da61f74e33e61396164
   languageName: node
   linkType: hard
 
@@ -105,43 +94,5 @@ __metadata:
     "@formatjs/fast-memoize": 3.1.3
     "@formatjs/icu-messageformat-parser": 3.5.6
   checksum: 49957207b10b1e474ae5d5899699e54a4a79d5bfec293385266f214721a8aa520e64a7a1592918bc4fde57ed136a15bd10997d6dc19c180b672d4841b43b2c68
-  languageName: node
-  linkType: hard
-
-"node-fetch@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "node-fetch@npm:2.7.0"
-  dependencies:
-    whatwg-url: ^5.0.0
-  peerDependencies:
-    encoding: ^0.1.0
-  peerDependenciesMeta:
-    encoding:
-      optional: true
-  checksum: d76d2f5edb451a3f05b15115ec89fc6be39de37c6089f1b6368df03b91e1633fd379a7e01b7ab05089a25034b2023d959b47e59759cb38d88341b2459e89d6e5
-  languageName: node
-  linkType: hard
-
-"tr46@npm:~0.0.3":
-  version: 0.0.3
-  resolution: "tr46@npm:0.0.3"
-  checksum: 726321c5eaf41b5002e17ffbd1fb7245999a073e8979085dacd47c4b4e8068ff5777142fc6726d6ca1fd2ff16921b48788b87225cbc57c72636f6efa8efbffe3
-  languageName: node
-  linkType: hard
-
-"webidl-conversions@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "webidl-conversions@npm:3.0.1"
-  checksum: c92a0a6ab95314bde9c32e1d0a6dfac83b578f8fa5f21e675bc2706ed6981bc26b7eb7e6a1fab158e5ce4adf9caa4a0aee49a52505d4d13c7be545f15021b17c
-  languageName: node
-  linkType: hard
-
-"whatwg-url@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "whatwg-url@npm:5.0.0"
-  dependencies:
-    tr46: ~0.0.3
-    webidl-conversions: ^3.0.0
-  checksum: b8daed4ad3356cc4899048a15b2c143a9aed0dfae1f611ebd55073310c7b910f522ad75d727346ad64203d7e6c79ef25eafd465f4d12775ca44b90fa82ed9e2c
   languageName: node
   linkType: hard
