@@ -5,26 +5,26 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@formatjs/fast-memoize@npm:3.1.3":
-  version: 3.1.3
-  resolution: "@formatjs/fast-memoize@npm:3.1.3"
-  checksum: 12f903f320d8a3a0b94656058f02cea9a165ea2fbeb56200e9c98479fa5c5377c411a7f82c0aaa195b1adbd4b850121d80acfd9c7e63b5120ed303da3f0c8ea8
+"@formatjs/fast-memoize@npm:3.1.4":
+  version: 3.1.4
+  resolution: "@formatjs/fast-memoize@npm:3.1.4"
+  checksum: 1a3109858af874557798e26eccf9793e237c26feb8b8f8433e8dc1ca5ce069c797e5c75c4e046ecb325ba9d9f8345d5f9e1efce6d033cab8d9e83fc6dc57c2d9
   languageName: node
   linkType: hard
 
-"@formatjs/icu-messageformat-parser@npm:3.5.6":
-  version: 3.5.6
-  resolution: "@formatjs/icu-messageformat-parser@npm:3.5.6"
+"@formatjs/icu-messageformat-parser@npm:3.5.7":
+  version: 3.5.7
+  resolution: "@formatjs/icu-messageformat-parser@npm:3.5.7"
   dependencies:
-    "@formatjs/icu-skeleton-parser": 2.1.6
-  checksum: 52f76737170e6e70fc9278a4a6cc83709e37c916d232f5b769bcb0bbab590a149b358d3fb498518d356043111fc2b66acb5e63550355a6e21571486e7e7faa56
+    "@formatjs/icu-skeleton-parser": 2.1.7
+  checksum: 2585d5902729430a45aaf2c88b4128fcb11e8df2b5252fb596521b0c5478b0143265ecb28917b790dd9fe105fee45bdefe9edd48083df61d5c1ac9daad1d6003
   languageName: node
   linkType: hard
 
-"@formatjs/icu-skeleton-parser@npm:2.1.6":
-  version: 2.1.6
-  resolution: "@formatjs/icu-skeleton-parser@npm:2.1.6"
-  checksum: 3d86fafafaeefbefbf38ebe305c171bd48175790d365f02356a8b2656ebffa79677681d469341defb90b79c14468b68c87bed06428815b0b0c3dd0c366910e79
+"@formatjs/icu-skeleton-parser@npm:2.1.7":
+  version: 2.1.7
+  resolution: "@formatjs/icu-skeleton-parser@npm:2.1.7"
+  checksum: 6e36a539f42ff7e645441c92e999c4992378707cc80afd9aa306834d22dc85106e88b4bab4a8ad3d4e14b52174c75ef0581f8141fa996f2813d18095a195021f
   languageName: node
   linkType: hard
 
@@ -37,7 +37,7 @@ __metadata:
     i18next: 26.0.8
     i18next-http-backend: ^4.0.0
     i18next-icu: ^2.4.3
-    intl-messageformat: ^11.2.3
+    intl-messageformat: ^11.2.4
   bin:
     check-i18n-variables: ./dist/check-i18n-variables.js
     check-i18next-icu-parser: ./dist/check-i18next-icu-parser.js
@@ -87,12 +87,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-messageformat@npm:^11.2.3":
-  version: 11.2.3
-  resolution: "intl-messageformat@npm:11.2.3"
+"intl-messageformat@npm:^11.2.4":
+  version: 11.2.4
+  resolution: "intl-messageformat@npm:11.2.4"
   dependencies:
-    "@formatjs/fast-memoize": 3.1.3
-    "@formatjs/icu-messageformat-parser": 3.5.6
-  checksum: 49957207b10b1e474ae5d5899699e54a4a79d5bfec293385266f214721a8aa520e64a7a1592918bc4fde57ed136a15bd10997d6dc19c180b672d4841b43b2c68
+    "@formatjs/fast-memoize": 3.1.4
+    "@formatjs/icu-messageformat-parser": 3.5.7
+  checksum: b79bf702bb660da03df6f7b3ee1b03c9399498fe2d73784023b8fb837159549db22ad42c7ca9f70e00a458e5c877c83bb22fe0c2e7a2c9683f829b7868afbde0
   languageName: node
   linkType: hard
