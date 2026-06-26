@@ -33,7 +33,7 @@ __metadata:
   resolution: "@freckle/i18n-scripts@workspace:."
   dependencies:
     esprima-walk: "npm:0.1.0"
-    flow-parser: "npm:0.319.0"
+    flow-parser: "npm:0.320.0"
     i18next: "npm:26.3.1"
     i18next-http-backend: "npm:^4.0.0"
     i18next-icu: "npm:^2.4.3"
@@ -52,19 +52,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-estree@npm:0.319.0":
-  version: 0.319.0
-  resolution: "flow-estree@npm:0.319.0"
-  checksum: 10/5d6679612f3d2f6e26f6a8e6ddb6750f8aaa6ee58355a24faacd192104e60fd88ec3b5e7bc0111cb91e33b34b5361da731dec155e7311eee344ac76751183f13
+"flow-estree@npm:0.320.0":
+  version: 0.320.0
+  resolution: "flow-estree@npm:0.320.0"
+  checksum: 10/e520c3045be7aaf969694190983076c4b5131f42eed0d808d8c08c3afd38ac7f4e3c8f71bbce720babc8dee847c649666fd12edf100bfc1eb6db6b0117470189
   languageName: node
   linkType: hard
 
-"flow-parser@npm:0.319.0":
-  version: 0.319.0
-  resolution: "flow-parser@npm:0.319.0"
+"flow-parser@npm:0.320.0":
+  version: 0.320.0
+  resolution: "flow-parser@npm:0.320.0"
   dependencies:
-    flow-estree: "npm:0.319.0"
-  checksum: 10/deede67b6ab07d74b3db63fb9c87e4bbdc451e21d126433883af6b423924d34e9a271acbb5fae9af929dd7371a551dfba8bb0e7c4b676b4a81b1c6235a16c183
+    flow-estree: "npm:0.320.0"
+  checksum: 10/7ad8653fafeee295a5400ee26bf501dc510f056c3b28c5794cff0f0870c05ad60b3ceb9f8de743a24d0969aebfc261627d624e747743553984b50d02ab00d2f8
   languageName: node
   linkType: hard
 
