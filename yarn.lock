@@ -34,7 +34,7 @@ __metadata:
   dependencies:
     esprima-walk: "npm:0.1.0"
     flow-parser: "npm:0.321.0"
-    i18next: "npm:26.3.3"
+    i18next: "npm:26.3.4"
     i18next-http-backend: "npm:^4.0.0"
     i18next-icu: "npm:^2.4.3"
     intl-messageformat: "npm:^11.2.9"
@@ -84,15 +84,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:26.3.3":
-  version: 26.3.3
-  resolution: "i18next@npm:26.3.3"
+"i18next@npm:26.3.4":
+  version: 26.3.4
+  resolution: "i18next@npm:26.3.4"
   peerDependencies:
     typescript: ^5 || ^6
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/b2c3ab2629b7d3b97d14fe36b7076a361a224d201f10abdabb830e63b1d77c058451ecd1fcc49bd2f98a1241cab68e0e6fa996e2e2aaa32de11ab054c425cdf4
+  checksum: 10/133ba9a5f76c1d57337f0dcc1b0ab0ff987714a1863813dcc95024531074c6d92603a19b0bac9c16a6b04c734742d8d098da0c222bef5a9562bdde231ea4b221
   languageName: node
   linkType: hard
 
