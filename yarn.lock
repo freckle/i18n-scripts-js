@@ -36,7 +36,7 @@ __metadata:
     flow-parser: "npm:0.321.0"
     i18next: "npm:26.3.4"
     i18next-http-backend: "npm:^4.0.0"
-    i18next-icu: "npm:^2.4.3"
+    i18next-icu: "npm:^2.4.4"
     intl-messageformat: "npm:^11.2.9"
   bin:
     check-i18n-variables: ./dist/check-i18n-variables.js
@@ -75,12 +75,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next-icu@npm:^2.4.3":
-  version: 2.4.3
-  resolution: "i18next-icu@npm:2.4.3"
+"i18next-icu@npm:^2.4.4":
+  version: 2.4.4
+  resolution: "i18next-icu@npm:2.4.4"
   peerDependencies:
     intl-messageformat: ">=10.3.3 <12.0.0"
-  checksum: 10/5d29e1b9fbf9381ae8afaf569d7d7dcdbcfc5f26f0b600d56e10a81802caa3b4a923694d5c851b87805f6270da489f28e52f9445d90efb87fbc6fd384a09cbdb
+  checksum: 10/f9ef5c8a2c8b8113adf30681bf3654cd1cd2dce5f6c0c8212f98d125d31cbf71816dea0ec9a263719f013259d7586774475d03a3ae3a1749fe7bb49caa5ad3a7
   languageName: node
   linkType: hard
 
