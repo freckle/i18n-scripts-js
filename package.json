@@ -2,7 +2,7 @@
   "name": "@freckle/i18n-scripts",
   "version": "1.0.0",
   "description": "Scripts for i18n",
-  "author": "Freckle",
+  "author": "Renaissance Learning Inc",
   "license": "MIT",
   "type": "module",
   "bin": {
