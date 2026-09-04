@@ -10,7 +10,7 @@ import {
   extractTranslationKeysAndVariables
 } from './translation-extraction.js'
 
-describe('extractTranslationKeysAndVariables', () => {
+describe(extractTranslationKeysAndVariables.name, () => {
   let dir
 
   beforeEach(async () => {

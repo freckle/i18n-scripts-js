@@ -6,7 +6,7 @@ import {beforeEach, describe, expect, it} from 'vitest'
 
 import {filterJsFiles, getFiles, supportedLngs} from './helpers.js'
 
-describe('filterJsFiles', () => {
+describe(filterJsFiles.name, () => {
   it('accepts js, ts and tsx', () => {
     expect(filterJsFiles({name: 'a.js'})).toBe(true)
     expect(filterJsFiles({name: 'a.ts'})).toBe(true)
@@ -26,7 +26,7 @@ describe('supportedLngs', () => {
   })
 })
 
-describe('getFiles', () => {
+describe(getFiles.name, () => {
   let root
 
   beforeEach(async () => {
