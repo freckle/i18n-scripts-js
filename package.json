@@ -2,20 +2,29 @@
   "name": "@freckle/i18n-scripts",
   "version": "1.0.0",
   "description": "Scripts for i18n",
-  "author": "Freckle",
+  "author": "Renaissance Learning Inc",
   "license": "MIT",
+  "type": "module",
   "bin": {
     "check-i18n-variables": "./dist/check-i18n-variables.js",
     "check-i18next-icu-parser": "./dist/check-i18next-icu-parser.js",
-    "check-missing-translations": "./dist/check-missing-translations.js"
+    "check-missing-translations": "./dist/check-missing-translations"
   },
-  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/freckle/i18n-scripts-js.git"
   },
   "scripts": {
-    "build": "rm -r dist && cp -r src dist"
+    "build": "rm -r dist && cp -r src dist && rm -f dist/*.test.js",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint",
+    "format": "prettier --write 'src/**/*.js'",
+    "format-check": "prettier --check 'src/**/*.js'",
+    "knip": "knip"
   },
   "dependencies": {
     "esprima-walk": "0.1.0",
@@ -25,5 +34,14 @@
     "i18next-icu": "^2.4.4",
     "intl-messageformat": "^11.2.14"
   },
-  "packageManager": "yarn@4.18.0"
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^10.9.1",
+    "globals": "^17.11.0",
+    "knip": "^6.32.3",
+    "prettier": "^3.9.6",
+    "vitest": "^4.1.11"
+  },
+  "packageManager": "pnpm@11.24.0+sha512.bd27e345e976dcb0be0b7a1228217b049a817e21b1f355c90dbe7dc46671895a8bc1e6d06c24554505ea93ea0b45f489a27ec1bfbc8de6a9659fca0f16fa0000"
 }

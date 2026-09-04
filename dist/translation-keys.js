@@ -7,21 +7,20 @@
 //   git ls-files |
 //      grep '\.js$' |
 //      grep -v '\.min\.js$' |
-//     ./scripts/translation-keys
+//     ./scripts/translation-keys.js
 //
 // We stream out the keys as seen. We do no sorting or de-duplication.
 //
-const {extractTranslationKeysAndVariables} = require('./translation-extraction.js')
-const readline = require('readline')
+import readline from 'node:readline'
 
-const interface = readline.createInterface({
+import {extractTranslationKeysAndVariables} from './translation-extraction.js'
+
+const lines = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
   terminal: false
 })
 
-interface.on('line', path => {
-  extractTranslationKeysAndVariables(path).forEach(({i18nKey}) =>
-    console.log(i18nKey)
-  )
+lines.on('line', path => {
+  extractTranslationKeysAndVariables(path).forEach(({i18nKey}) => console.log(i18nKey))
 })
