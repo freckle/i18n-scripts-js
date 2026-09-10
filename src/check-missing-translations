@@ -9,7 +9,7 @@ translation_keys_in_code() {
   git ls-files "$project_path" |
     grep -E '\.(js|ts|tsx)$' |
     grep -v '\.min\.js$' |
-    "$script_dir/translation-keys"
+    "$script_dir/translation-keys.js"
 }
 
 translation_keys_in_locize() {
