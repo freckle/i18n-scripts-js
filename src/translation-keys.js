@@ -11,8 +11,9 @@
 //
 // We stream out the keys as seen. We do no sorting or de-duplication.
 //
-const {extractTranslationKeysAndVariables} = require('./translation-extraction.js')
-const readline = require('readline')
+import readline from 'node:readline'
+
+import {extractTranslationKeysAndVariables} from './translation-extraction.js'
 
 const lines = readline.createInterface({
   input: process.stdin,
