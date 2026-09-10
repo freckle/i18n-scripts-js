@@ -5,7 +5,7 @@ Scripts for i18n validation.
 ## Install
 
 ```sh
-yarn add @freckle/i18n-scripts
+pnpm add @freckle/i18n-scripts
 ```
 
 ## Usage
