@@ -7,7 +7,7 @@
 //   git ls-files |
 //      grep '\.js$' |
 //      grep -v '\.min\.js$' |
-//     ./scripts/translation-keys
+//     ./scripts/translation-keys.js
 //
 // We stream out the keys as seen. We do no sorting or de-duplication.
 //
