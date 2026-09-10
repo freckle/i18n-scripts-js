@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// @flow
 //
 // Checks all keys in Locize to make sure that they can be parsed by the `i18next` `t` function
 //
@@ -17,7 +16,6 @@ for (const arg of ns) {
     throw new Error(`Invalid arguments: ${arg} is not a namespace`)
   }
 }
-
 
 const main = async () => {
   const t = await i18next
