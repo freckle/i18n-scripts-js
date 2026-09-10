@@ -19,6 +19,7 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm format-check
       - run: pnpm build
       - uses: freckle/check-git-clean-action@v1
         with:
