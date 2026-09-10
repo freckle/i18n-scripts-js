@@ -13,10 +13,7 @@ export default [
     rules: {
       // typescript-eslint turns this off because tsc reports undefined names;
       // nothing type-checks this package, so it has to come back on.
-      'no-undef': 'error',
-      // The sources are CommonJS until the ESM conversion in #97, which drops
-      // this waiver.
-      '@typescript-eslint/no-require-imports': 'off'
+      'no-undef': 'error'
     }
   }
 ]
