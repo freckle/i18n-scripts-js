@@ -3,8 +3,6 @@
 // Checks all locize keys (in the codebase) with known variables against key
 // values in locize ensuring that variables in locize refer to known vars.
 //
-const {promises: fs} = require('fs')
-const p = require('path')
 const i18next = require('i18next')
 const ICU = require('i18next-icu')
 const HttpBackend = require('i18next-http-backend')
@@ -63,7 +61,7 @@ const extractVariablesFromICUAst = ast => {
 }
 
 const main = async () => {
-  const t = await i18next
+  await i18next
     .use(ICU)
     .use(HttpBackend)
     .init({
@@ -112,7 +110,7 @@ const main = async () => {
               }
             }
           }
-        } catch (e) {
+        } catch {
           // We have another script that checks that `IntlMessageFormat` can
           // successfully parse the ICU text so let's not fail for that reason.
         }

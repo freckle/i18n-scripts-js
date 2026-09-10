@@ -14,14 +14,12 @@
 const {extractTranslationKeysAndVariables} = require('./translation-extraction.js')
 const readline = require('readline')
 
-const interface = readline.createInterface({
+const lines = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
   terminal: false
 })
 
-interface.on('line', path => {
-  extractTranslationKeysAndVariables(path).forEach(({i18nKey}) =>
-    console.log(i18nKey)
-  )
+lines.on('line', path => {
+  extractTranslationKeysAndVariables(path).forEach(({i18nKey}) => console.log(i18nKey))
 })
