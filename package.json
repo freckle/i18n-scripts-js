@@ -18,10 +18,12 @@
     "url": "git+https://github.com/freckle/i18n-scripts-js.git"
   },
   "scripts": {
-    "build": "rm -r dist && cp -r src dist",
+    "build": "rm -r dist && cp -r src dist && rm -f dist/*.test.js",
+    "coverage": "vitest run --coverage",
     "format": "prettier --write 'src/**/*.js'",
     "format-check": "prettier --check 'src/**/*.js'",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run"
   },
   "dependencies": {
     "esprima-walk": "0.1.0",
@@ -33,9 +35,11 @@
   },
   "devDependencies": {
     "@freckle/eslint-config": "^1.2.0",
+    "@vitest/coverage-v8": "^5.0.0",
     "eslint": "^10.11.0",
     "globals": "^17.13.0",
-    "prettier": "^3.9.9"
+    "prettier": "^3.9.9",
+    "vitest": "^5.0.0"
   },
   "packageManager": "pnpm@12.8.2+sha512.a5941679663d952c5f0ecc38ba98af98b4dc01b95780354f6894f2f873973cef2f7e2989d7db3ee5393938ae21f62fe06bcdf685d475ddad829a62095d2b8b11"
 }
