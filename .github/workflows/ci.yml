@@ -21,6 +21,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm format-check
       - run: pnpm lint
+      - run: pnpm coverage
       - run: pnpm build
       - uses: freckle/check-git-clean-action@v1
         with:
