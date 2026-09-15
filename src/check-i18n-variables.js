@@ -3,16 +3,13 @@
 // Checks all locize keys (in the codebase) with known variables against key
 // values in locize ensuring that variables in locize refer to known vars.
 //
-const i18next = require('i18next')
-const ICU = require('i18next-icu')
-const HttpBackend = require('i18next-http-backend')
-const {IntlMessageFormat} = require('intl-messageformat')
+import HttpBackend from 'i18next-http-backend'
+import ICU from 'i18next-icu'
+import i18next from 'i18next'
+import {IntlMessageFormat} from 'intl-messageformat'
 
-const {
-  extractTranslationKeysAndVariables,
-  KNOWN_VARIABLES_TAG
-} = require('./translation-extraction.js')
-const {getFiles, filterJsFiles, supportedLngs} = require('./helpers.js')
+import {getFiles, filterJsFiles, supportedLngs} from './helpers.js'
+import {extractTranslationKeysAndVariables, KNOWN_VARIABLES_TAG} from './translation-extraction.js'
 
 const [_nodeBin, _scriptPath, ...projects] = process.argv
 

@@ -2,10 +2,11 @@
 //
 // Checks all keys in Locize to make sure that they can be parsed by the `i18next` `t` function
 //
-const i18next = require('i18next')
-const ICU = require('i18next-icu')
-const HttpBackend = require('i18next-http-backend')
-const {supportedLngs} = require('./helpers.js')
+import HttpBackend from 'i18next-http-backend'
+import ICU from 'i18next-icu'
+import i18next from 'i18next'
+
+import {supportedLngs} from './helpers.js'
 
 const VALID_NAMESPACES = ['school', 'student', 'console', 'classroom', 'common']
 
