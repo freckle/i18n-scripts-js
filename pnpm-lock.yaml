@@ -12,8 +12,8 @@ importers:
         specifier: 0.1.0
         version: 0.1.0
       flow-parser:
-        specifier: 0.330.0
-        version: 0.330.0
+        specifier: 0.331.0
+        version: 0.331.0
       i18next:
         specifier: 26.4.2
         version: 26.4.2
@@ -245,12 +245,12 @@ packages:
   flatted@3.4.4:
     resolution: {integrity: sha512-5+ybhBZANEJxaH3X5evAFatUxLfEHSr7n6kYJ+1Qd0mUqr4eu9gIf6GDbWHf8RJijHrjjO8G+la14SlL2SeS1Q==}
 
-  flow-estree@0.330.0:
-    resolution: {integrity: sha512-IIEGATLNfih3R7AfKYI1ZstiV+RFjRuX1GhrB9gZBifhovHcyTag9IlvkFiSP2hM7G6i1HfAwjn6i3s+EN6SZQ==}
+  flow-estree@0.331.0:
+    resolution: {integrity: sha512-FVLYkSL/ITb/QXBEQvNWPjPooRGswuUtGOwrH+puSlMDneNkxy640+FZsk/TfKL+b7Wbw/Fg9FTUv2bMQDpj2w==}
     engines: {node: '>=18'}
 
-  flow-parser@0.330.0:
-    resolution: {integrity: sha512-ytk/NqSxCVNJ6cwlp/rHLot0bE4KGt0LAIcOU0F9QXwp9zdUI0EdDzKETLHVRVkmZj3bROT9v0YZVdD6yJC6gg==}
+  flow-parser@0.331.0:
+    resolution: {integrity: sha512-vEZcHIlnKeN8JSVtYFczj8sWJfHIJOkz+YG00O/oul/Bete+t1ZhTi+O6JRRLFYvGW+yJkZ0YgL16iStnbkUqQ==}
     engines: {node: '>=0.4.0'}
 
   glob-parent@6.0.2:
@@ -618,11 +618,11 @@ snapshots:
 
   flatted@3.4.4: {}
 
-  flow-estree@0.330.0: {}
+  flow-estree@0.331.0: {}
 
-  flow-parser@0.330.0:
+  flow-parser@0.331.0:
     dependencies:
-      flow-estree: 0.330.0
+      flow-estree: 0.331.0
 
   glob-parent@6.0.2:
     dependencies:
