@@ -23,7 +23,7 @@
     "i18next": "26.4.2",
     "i18next-http-backend": "^4.0.2",
     "i18next-icu": "^2.4.4",
-    "intl-messageformat": "^12.0.0"
+    "intl-messageformat": "^12.1.0"
   },
   "packageManager": "yarn@4.18.0"
 }
