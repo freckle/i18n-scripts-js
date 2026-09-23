@@ -1,19 +1,22 @@
-import eslint from '@eslint/js'
-import {defineConfig} from 'eslint/config'
+import freckle from '@freckle/eslint-config'
 import globals from 'globals'
 
-export default defineConfig([
-  {
-    ignores: ['dist/', 'coverage/']
-  },
+export default [
+  // The shared config scopes its rules to `**/*.ts`; this package is plain
+  // JavaScript, so without retargeting it would lint nothing.
+  ...freckle.map(config => (config.files ? {...config, files: ['**/*.js']} : config)),
   {
     files: ['**/*.js'],
-    extends: [eslint.configs.recommended],
     languageOptions: {
       globals: globals.node
     },
     rules: {
-      'no-unused-vars': ['error', {argsIgnorePattern: '^_', varsIgnorePattern: '^_'}]
+      // typescript-eslint turns this off because tsc reports undefined names;
+      // nothing type-checks this package, so it has to come back on.
+      'no-undef': 'error',
+      // The sources are CommonJS until the ESM conversion in #97, which drops
+      // this waiver.
+      '@typescript-eslint/no-require-imports': 'off'
     }
   }
-])
+]
