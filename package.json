@@ -2,7 +2,7 @@
   "name": "@freckle/i18n-scripts",
   "version": "1.0.0",
   "description": "Scripts for i18n",
-  "author": "Freckle",
+  "author": "Renaissance Learning Inc",
   "license": "MIT",
   "bin": {
     "check-i18n-variables": "./dist/check-i18n-variables.js",
@@ -15,7 +15,10 @@
     "url": "git+https://github.com/freckle/i18n-scripts-js.git"
   },
   "scripts": {
-    "build": "rm -r dist && cp -r src dist"
+    "build": "rm -r dist && cp -r src dist",
+    "format": "prettier --write 'src/**/*.js'",
+    "format-check": "prettier --check 'src/**/*.js'",
+    "lint": "eslint"
   },
   "dependencies": {
     "esprima-walk": "0.1.0",
@@ -25,5 +28,11 @@
     "i18next-icu": "^2.4.4",
     "intl-messageformat": "^12.1.0"
   },
-  "packageManager": "yarn@4.18.0"
+  "devDependencies": {
+    "@freckle/eslint-config": "^1.1.0",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.8"
+  },
+  "packageManager": "pnpm@12.6.0+sha512.3ef68f951cb111ac204b4a5a16f0b2ddf0da56a96e0413e81d855d9f0b55ef926714709028e1cd00c405c2c5fb7b9e8ec4dc46777c805d0373c2f2ff00fd20ec"
 }
