@@ -2,8 +2,6 @@ import {promises as fs} from 'node:fs'
 import os from 'node:os'
 import p from 'node:path'
 
-import {beforeEach, describe, expect, it} from 'vitest'
-
 import {
   KNOWN_VARIABLES_TAG,
   UNKNOWN_VARIABLES_TAG,

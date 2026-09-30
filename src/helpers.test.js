@@ -2,8 +2,6 @@ import {promises as fs} from 'node:fs'
 import os from 'node:os'
 import p from 'node:path'
 
-import {beforeEach, describe, expect, it} from 'vitest'
-
 import {filterJsFiles, getFiles, supportedLngs} from './helpers.js'
 
 describe(filterJsFiles.name, () => {

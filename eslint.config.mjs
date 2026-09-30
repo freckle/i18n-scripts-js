@@ -15,5 +15,16 @@ export default [
       // nothing type-checks this package, so it has to come back on.
       'no-undef': 'error'
     }
+  },
+  {
+    files: ['**/*.test.js'],
+    languageOptions: {
+      globals: {
+        beforeEach: 'readonly',
+        describe: 'readonly',
+        expect: 'readonly',
+        it: 'readonly'
+      }
+    }
   }
 ]
