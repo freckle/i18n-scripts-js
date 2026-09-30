@@ -7,7 +7,7 @@
   "bin": {
     "check-i18n-variables": "./dist/check-i18n-variables.js",
     "check-i18next-icu-parser": "./dist/check-i18next-icu-parser.js",
-    "check-missing-translations": "./dist/check-missing-translations.js"
+    "check-missing-translations": "./dist/check-missing-translations"
   },
   "main": "./dist/index.js",
   "repository": {
