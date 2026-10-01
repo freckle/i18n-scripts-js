@@ -18,7 +18,7 @@
     "url": "git+https://github.com/freckle/i18n-scripts-js.git"
   },
   "scripts": {
-    "build": "rm -r dist && cp -r src dist && rm -f dist/*.test.js",
+    "build": "rm -rf dist && cp -r src dist && rm -f dist/*.test.js",
     "coverage": "vitest run --coverage",
     "format": "prettier --write 'src/**/*.js'",
     "format-check": "prettier --check 'src/**/*.js'",
