@@ -1,6 +1,6 @@
-const fs = require('fs')
-const parser = require('flow-parser')
-const walk = require('esprima-walk')
+import fs from 'node:fs'
+import parser from 'flow-parser'
+import walk from 'esprima-walk'
 
 const isIdentifierT = node => node && node.type === 'Identifier' && node.name === 't'
 
@@ -24,8 +24,8 @@ const isObjectWithSimpleProperties = node =>
   node.type === 'ObjectExpression' &&
   node.properties.every(p => p.type === 'Property' && p.key.type === 'Identifier')
 
-const KNOWN_VARIABLES_TAG = 'i18n-key-with-known-variables'
-const UNKNOWN_VARIABLES_TAG = 'i18n-key-with-unknown-variables'
+export const KNOWN_VARIABLES_TAG = 'i18n-key-with-known-variables'
+export const UNKNOWN_VARIABLES_TAG = 'i18n-key-with-unknown-variables'
 
 const knownVariables = (source, i18nKey, objectWithSimpleProperties) => ({
   tag: KNOWN_VARIABLES_TAG,
@@ -47,9 +47,6 @@ const unknownVariables = (source, i18nKey) => ({
   i18nKey
 })
 
-module.exports.KNOWN_VARIABLES_TAG = KNOWN_VARIABLES_TAG
-module.exports.UNKNOWN_VARIABLES_TAG = UNKNOWN_VARIABLES_TAG
-
 // Attempt to find all translations keys and their provided variables in use in JS files.
 //
 // Methodology:
@@ -67,7 +64,7 @@ module.exports.UNKNOWN_VARIABLES_TAG = UNKNOWN_VARIABLES_TAG
 //       are not known
 //
 // Yields keys with variables as encountered without sorting or de-duplication.
-module.exports.extractTranslationKeysAndVariables = path => {
+export const extractTranslationKeysAndVariables = path => {
   const content = fs.readFileSync(path, {encoding: 'utf8'})
   const ast = parser.parse(content)
 

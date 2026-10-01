@@ -1,9 +1,8 @@
-#!/usr/bin/env node
-const {promises: fs} = require('fs')
-const p = require('path')
+import {promises as fs} from 'node:fs'
+import p from 'node:path'
 
 // Modified from https://dev.to/leonard/get-files-recursive-with-the-node-js-file-system-fs-2n7o
-async function getFiles(path) {
+export async function getFiles(path) {
   const allEntries = await fs.readdir(path, {withFileTypes: true})
 
   const entries = allEntries.filter(file => file.name !== 'node_modules' && file.name !== '.cache')
@@ -21,14 +20,8 @@ async function getFiles(path) {
   return files
 }
 
-module.exports.getFiles = getFiles
-
-const filterJsFiles = f =>
+export const filterJsFiles = f =>
   (f.name.endsWith('.js') || f.name.endsWith('.ts') || f.name.endsWith('.tsx')) &&
   !f.name.endsWith('min.js')
 
-module.exports.filterJsFiles = filterJsFiles
-
-const supportedLngs = ['es', 'en', 'en-GB']
-
-module.exports.supportedLngs = supportedLngs
+export const supportedLngs = ['es', 'en', 'en-GB']

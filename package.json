@@ -4,12 +4,15 @@
   "description": "Scripts for i18n",
   "author": "Renaissance Learning Inc",
   "license": "MIT",
+  "type": "module",
   "bin": {
     "check-i18n-variables": "./dist/check-i18n-variables.js",
     "check-i18next-icu-parser": "./dist/check-i18next-icu-parser.js",
     "check-missing-translations": "./dist/check-missing-translations"
   },
-  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/freckle/i18n-scripts-js.git"
