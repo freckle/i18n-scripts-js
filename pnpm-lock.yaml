@@ -188,6 +188,9 @@ importers:
       '@freckle/eslint-config':
         specifier: ^1.1.0
         version: 1.1.0(eslint@10.11.0(jiti@2.7.0))(typescript@6.0.3)
+      '@freckle/prettier-config':
+        specifier: ^1.2.0
+        version: 1.2.0(prettier@3.9.9)
       '@vitest/coverage-v8':
         specifier: ^5.0.0
         version: 5.0.2(vitest@5.0.2)
@@ -297,6 +300,11 @@ packages:
     resolution: {integrity: sha512-EVIB7j368Ggw2HNyXhntHaYny1c2vMKZO35KOpHwH2tHcdVB8liKAgFqsFfIKquiX8wQ7w7ciAAqElqEs5bQqg==}
     peerDependencies:
       eslint: '>= 10.10.0'
+
+  '@freckle/prettier-config@1.2.0':
+    resolution: {integrity: sha512-k524LHwjIf8+Wm5PcE08DNa8OiKpaK6b9+xUI5/z12drpFBIM2KTEeyhrc26b1l/qvLFrB8H/9tw5tkG3F9EOw==}
+    peerDependencies:
+      prettier: '>= 3'
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1491,6 +1499,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@freckle/prettier-config@1.2.0(prettier@3.9.9)':
+    dependencies:
+      prettier: 3.9.9
 
   '@humanfs/core@0.19.2':
     dependencies:
