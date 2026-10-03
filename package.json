@@ -32,7 +32,7 @@
     "intl-messageformat": "^12.1.2"
   },
   "devDependencies": {
-    "@freckle/eslint-config": "^1.1.0",
+    "@freckle/eslint-config": "^1.1.1",
     "eslint": "^10.11.0",
     "globals": "^17.12.0",
     "prettier": "^3.9.9"
