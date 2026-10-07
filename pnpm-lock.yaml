@@ -201,7 +201,7 @@ importers:
         specifier: ^17.13.0
         version: 17.13.0
       knip:
-        specifier: ^6.32.3
+        specifier: ^6.39.0
         version: 6.39.0
       prettier:
         specifier: ^3.9.9
