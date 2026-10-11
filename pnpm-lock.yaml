@@ -179,8 +179,8 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2
       i18next-icu:
-        specifier: ^2.4.4
-        version: 2.4.4(intl-messageformat@12.1.2)
+        specifier: ^2.4.5
+        version: 2.5.0(intl-messageformat@12.1.2)
       intl-messageformat:
         specifier: ^12.1.2
         version: 12.1.2
@@ -981,10 +981,10 @@ packages:
     resolution: {integrity: sha512-oay62dIB2kL7+WHzoUXBjWfL3+mwijD3pQkQkIEaRLhy6kjXxUhrRenV0gInwlCASAaJaDy94+XvYizK+cAGdA==}
     engines: {node: '>=18'}
 
-  i18next-icu@2.4.4:
-    resolution: {integrity: sha512-yfYdGTftClNUnZAQG1cu0yHHLaMVsrqfcgQHHchGDufkunBLKHuw2wXTCDuE+8mWMMcdePl8UBR0EUUA/3+FDw==}
+  i18next-icu@2.5.0:
+    resolution: {integrity: sha512-/du0wHUfcJhP3gzHw4ZHp9n0XA6xpDD029ZVNy9e2ohWEZHJUnW8X/ZAC0ltE72hceRa+XcAz72NU2UVF+Guuw==}
     peerDependencies:
-      intl-messageformat: '>=10.3.3 <12.0.0'
+      intl-messageformat: '>=10.3.3 <13.0.0'
 
   i18next@26.4.2:
     resolution: {integrity: sha512-RX+R0VLg13IbvRuJSxnqykUFS9vQZTl8wYpWPCIUDWVrSGjsQywB5Y+pjzrkboxGAuYfJZVH1InFTdgBdxq6ug==}
@@ -2045,7 +2045,7 @@ snapshots:
 
   i18next-http-backend@4.0.2: {}
 
-  i18next-icu@2.4.4(intl-messageformat@12.1.2):
+  i18next-icu@2.5.0(intl-messageformat@12.1.2):
     dependencies:
       intl-messageformat: 12.1.2
 
