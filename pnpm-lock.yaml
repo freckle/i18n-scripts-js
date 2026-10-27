@@ -170,8 +170,8 @@ importers:
         specifier: 0.1.0
         version: 0.1.0
       flow-parser:
-        specifier: 0.336.0
-        version: 0.336.0
+        specifier: 0.337.0
+        version: 0.337.0
       i18next:
         specifier: 26.5.5
         version: 26.5.5(typescript@6.0.3)
@@ -938,12 +938,12 @@ packages:
   flatted@3.4.4:
     resolution: {integrity: sha512-5+ybhBZANEJxaH3X5evAFatUxLfEHSr7n6kYJ+1Qd0mUqr4eu9gIf6GDbWHf8RJijHrjjO8G+la14SlL2SeS1Q==}
 
-  flow-estree@0.336.0:
-    resolution: {integrity: sha512-0VaGWHJourzh88otU5bVJ4Z/oIsD+R6yaeR0Q8t8dezsKQI/RLi5m3fNzkiLYLhJ+YwM3JRSKlOqGplOI5Yo3w==}
+  flow-estree@0.337.0:
+    resolution: {integrity: sha512-8u9x/Ur45zWAdlD8SKHq3MnMttR6MB0x2xna3mNlwfs8BSJ0rCH/1Cyrfvq7eSq61ppshRHZbmQhOp870WmAOA==}
     engines: {node: '>=18'}
 
-  flow-parser@0.336.0:
-    resolution: {integrity: sha512-O8QvQf/B3rBF+eagcc9/WMAjfJoaKckdgSd8PT/qvMIIe4ZjVKrSqV5SDnRFAKY0VrE8r5C4ADYgvYhmwkWADA==}
+  flow-parser@0.337.0:
+    resolution: {integrity: sha512-jGsqT5qJ6J/7gD870pKgL7K8x8l6IzUvtBlRX+OdLP4EGrpDF+3sUqF8HpyR/YcAJs2mVMVhW2GZsxmtXc+aIw==}
     engines: {node: '>=0.4.0'}
 
   formatly@0.11.4:
@@ -2011,11 +2011,11 @@ snapshots:
 
   flatted@3.4.4: {}
 
-  flow-estree@0.336.0: {}
+  flow-estree@0.337.0: {}
 
-  flow-parser@0.336.0:
+  flow-parser@0.337.0:
     dependencies:
-      flow-estree: 0.336.0
+      flow-estree: 0.337.0
 
   formatly@0.11.4:
     dependencies:
