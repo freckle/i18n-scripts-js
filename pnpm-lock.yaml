@@ -176,8 +176,8 @@ importers:
         specifier: 26.5.6
         version: 26.5.6(typescript@6.0.3)
       i18next-http-backend:
-        specifier: ^4.0.4
-        version: 4.0.4
+        specifier: ^4.0.5
+        version: 4.0.6
       i18next-icu:
         specifier: ^2.6.1
         version: 2.6.1(intl-messageformat@12.1.4)
@@ -977,8 +977,8 @@ packages:
   hookified@2.2.0:
     resolution: {integrity: sha512-p/LgFzRN5FeoD3DLS6bkUapeye6E4SI6yJs6KetENd18S+FBthqYq2amJUWpt5z0EQwwHemidjY5OqJGEKm5uA==}
 
-  i18next-http-backend@4.0.4:
-    resolution: {integrity: sha512-nG9OQKvUsPiTVUBg1rCGmvmWhzxC9GOxVbGdTYyejHVMSUjutt1hiBNVSzhB/ZE7keL9Xkb880kUfhDovV5T5g==}
+  i18next-http-backend@4.0.6:
+    resolution: {integrity: sha512-k5OPDXAQH9CZ2Ju2DDw1ZC4WiYmjKUjOE4lcd51tNQyWjVDfpuwPcE9Y5VzDpz1tR1Z4wxkkj4H+ImxgwbfpeQ==}
     engines: {node: '>=18'}
 
   i18next-icu@2.6.1:
@@ -2043,7 +2043,7 @@ snapshots:
 
   hookified@2.2.0: {}
 
-  i18next-http-backend@4.0.4: {}
+  i18next-http-backend@4.0.6: {}
 
   i18next-icu@2.6.1(intl-messageformat@12.1.4):
     dependencies:
