@@ -173,8 +173,8 @@ importers:
         specifier: 0.338.0
         version: 0.338.0
       i18next:
-        specifier: 26.5.12
-        version: 26.5.12(typescript@6.0.3)
+        specifier: 26.7.1
+        version: 26.7.1(typescript@6.0.3)
       i18next-http-backend:
         specifier: ^4.0.10
         version: 4.0.10
@@ -986,8 +986,8 @@ packages:
     peerDependencies:
       intl-messageformat: '>=10.3.3 <13.0.0'
 
-  i18next@26.5.12:
-    resolution: {integrity: sha512-vTt8tc3y5axoU7wwTYg8vjpILLyP33a5GyGJAVI7FDRx1XueYxZVIkcVeStoftrVnAM/o28hKvK0sslucDI9aQ==}
+  i18next@26.7.1:
+    resolution: {integrity: sha512-cX+3RRVczel/V2kCMTACckSGSpqgtWYEA6beXNYVms7dOQiHojdPYHD26lT4IKimNeoGWrLvtPgjftbRvmZJVw==}
     peerDependencies:
       typescript: ^5 || ^6 || ^7
     peerDependenciesMeta:
@@ -2049,7 +2049,7 @@ snapshots:
     dependencies:
       intl-messageformat: 12.1.4
 
-  i18next@26.5.12(typescript@6.0.3):
+  i18next@26.7.1(typescript@6.0.3):
     optionalDependencies:
       typescript: 6.0.3
 
