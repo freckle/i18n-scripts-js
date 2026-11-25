@@ -31,7 +31,7 @@
     "flow-parser": "0.340.0",
     "i18next": "27.2.2",
     "i18next-http-backend": "^4.1.0",
-    "i18next-icu": "^2.7.0",
+    "i18next-icu": "^2.7.1",
     "intl-messageformat": "^12.2.0"
   },
   "devDependencies": {
