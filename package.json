@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "esprima-walk": "0.1.0",
-    "flow-parser": "0.341.0",
+    "flow-parser": "0.342.0",
     "i18next": "27.2.2",
     "i18next-http-backend": "^4.1.0",
     "i18next-icu": "^2.7.1",
