@@ -185,7 +185,7 @@ importers:
         specifier: 27.2.3
         version: 27.2.3(typescript@6.0.3)
       i18next-http-backend:
-        specifier: ^4.1.0
+        specifier: ^4.1.1
         version: 4.1.1
       i18next-icu:
         specifier: ^2.7.1
